@@ -6,6 +6,7 @@ from core.config import settings
 from core.logging import get_logger
 from core.middleware import RequestIDMiddleware, get_request_id
 from routers.chat import router as chat_router
+from routers.embed import router as embed_router
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
@@ -47,7 +48,7 @@ logger = get_logger("api")
 
 # Routers
 app.include_router(chat_router, prefix="/api", tags=["CHAT"])
-
+app.include_router(embed_router, prefix="/api", tags=["EMBEDDING"])
 
 @app.get("/", tags=["Health"])
 async def root():

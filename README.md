@@ -17,12 +17,24 @@ FastAPI-based LLM API với logging system, request tracing, và multi-provider 
 ```
 app/
 ├── core/
+│   ├── __init__.py
 │   ├── config.py          # Application settings
 │   ├── logging.py         # Logging configuration
 │   └── middleware.py      # Request ID middleware
 ├── routers/
+│   ├── __init__.py
 │   └── chat.py           # Chat endpoints
+├── schemas/
+│   ├── __init__.py
+│   └── chat.py           # Pydantic models
+├── services/
+│   └── __init__.py       # Business logic services
+├── logs/
+│   └── app.log           # Application logs
 └── main.py               # FastAPI application
+requirements.txt          # Python dependencies
+README.md                 # Project documentation
+.gitignore               # Git ignore rules
 ```
 
 ## 🚀 Quick Start

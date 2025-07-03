@@ -59,10 +59,12 @@ cp .env.example .env
 ### 4. Run application
 ```bash
 # Development
-python3 -m app.main
+cd app
+python3 -m main.py
 
 # Or with uvicorn
-uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
+cd app
+uvicorn main:app --reload --host 0.0.0.0 --port 8000
 ```
 
 ### 5. Access API

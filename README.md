@@ -8,7 +8,6 @@ FastAPI-based LLM API with logging system, request tracing, and multi-provider s
 - 📝 **Advanced Logging** - Request ID tracing, file rotation
 - 🌐 **CORS Support** - Cross-origin resource sharing
 - 🔌 **Multi-LLM Providers** - OpenAI, Anthropic, Gemini
-- ⚡ **Hot Reload** - Development-friendly
 - 🛡️ **Type Safety** - Pydantic models
 - 📊 **Request Tracing** - Unique ID for each request
 

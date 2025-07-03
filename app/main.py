@@ -62,15 +62,15 @@ async def health_check():
     return {"status": "healthy", "version": settings.version, "request_id": get_request_id()}
 
 
-# if __name__ == "__main__":
-#     # Logger cho main
-#     main_logger = get_logger("main")
-#     main_logger.info("Starting server from main...")
+if __name__ == "__main__":
+    # Logger cho main
+    main_logger = get_logger("main")
+    main_logger.info("Starting server from main...")
     
-#     uvicorn.run(
-#         "main:app",
-#         host="0.0.0.0",
-#         port=8000,
-#         reload=settings.debug,
-#         log_level=settings.log_level.lower()
-#     ) 
+    uvicorn.run(
+        "main:app",
+        host="0.0.0.0",
+        port=8000,
+        reload=settings.debug,
+        log_level=settings.log_level.lower()
+    ) 

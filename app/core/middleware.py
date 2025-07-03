@@ -31,8 +31,8 @@ class RequestIDMiddleware(BaseHTTPMiddleware):
         # Add to request state
         request.state.request_id = req_id
         
-        # Log request start (request ID sẽ tự động hiện nhờ formatter)
-        logger.info(f"{request.method} {request.url.path}")
+        # Log request start
+        logger.info(f"{request.method} {request.url.path}") 
         
         # Process request
         response: Response = await call_next(request)

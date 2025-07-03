@@ -5,7 +5,7 @@ from pydantic import Field
 
 class Settings(BaseSettings):
     model_config = SettingsConfigDict(
-        env_file=".env",
+        env_file="../.env",
         case_sensitive=False,
         extra="ignore",
         protected_namespaces = ('settings_',)

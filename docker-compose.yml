@@ -1,0 +1,11 @@
+services:
+  llm-codebase:
+    build:
+      context: .
+    image: llm-codebase-app
+    container_name: llm-codebase-1
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./app:/app
+    

@@ -41,7 +41,7 @@ README.md                 # Project documentation
 
 ### 1. Clone repository
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/Quoccuong1004/basecode.git
 cd new-basecode
 ```
 

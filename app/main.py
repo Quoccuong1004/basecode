@@ -47,8 +47,8 @@ logger = get_logger("api")
 
 
 # Routers
-app.include_router(chat_router, prefix="/api", tags=["CHAT"])
-app.include_router(embed_router, prefix="/api", tags=["EMBEDDING"])
+app.include_router(chat_router, prefix="/api", tags=["Chat"])
+app.include_router(embed_router, prefix="/api", tags=["Embedding"])
 
 @app.get("/", tags=["Health"])
 async def root():

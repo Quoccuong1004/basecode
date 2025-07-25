@@ -1,6 +1,6 @@
 from fastapi import APIRouter
 from schemas.chat import ChatMessage
-from services.llm import chat_llm
+from services.chat import chat_llm
 router = APIRouter()
 
 @router.post("/chat")
